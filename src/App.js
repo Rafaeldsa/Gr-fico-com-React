@@ -17,7 +17,7 @@ function App() {
 
   const data = []
   for (let i = 0; i < acel.length; i++) {
-      data.push({tempo: i, acelerometro: acel[i], giroscopio: giro[i]});
+      data.push({tempo: i, acelerômetro: acel[i], giroscópio: giro[i]});
   }
   return (
     <div>
@@ -29,7 +29,7 @@ function App() {
         >
         <Line
           type='monotone'
-          dataKey='acelerometro'
+          dataKey='acelerômetro'
           stroke='#e02041'
           activeDot={{r: 8}}
           />
@@ -48,7 +48,7 @@ function App() {
         >
            <Line
           type='monotone'
-          dataKey='giroscopio'
+          dataKey='giroscópio'
           stroke='#8884d8'
           activeDot={{r: 8}}
           />
