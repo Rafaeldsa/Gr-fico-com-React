@@ -20,7 +20,12 @@ function App() {
       data.push({tempo: i, acelerômetro: acel[i], giroscópio: giro[i]});
   }
   return (
-    <div>
+    <div id="container-principal" className="container">
+    <header id="header">
+      <h1>Gráficos</h1>
+    </header>
+
+    <div id="conteudo">
       <LineChart
         width={600}
         height={300}
@@ -58,6 +63,7 @@ function App() {
         <XAxis dataKey='tempo'/>
         <Legend />
         </LineChart>
+        </div>
         </div>
   );
 }
