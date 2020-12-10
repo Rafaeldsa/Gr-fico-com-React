@@ -12,7 +12,7 @@ import {
 // Exemplos
 //dataKey = "acelerômetro"
 // stroke é a cor em hexa
-const Graphic = ({data, dataKey, stroke}) => {
+const Graphic = ({data, dataKey,dataKeyX, stroke}) => {
 
 return (
   <div id="conteudo">
@@ -31,7 +31,7 @@ return (
       <CartesianGrid strokeDasharray='3 3'/>
       <Tooltip/>
       <YAxis/>
-      <XAxis dataKey='tempo'/>
+      <XAxis dataKey={dataKeyX}/>
       <Legend />
     </LineChart>
   </div>
